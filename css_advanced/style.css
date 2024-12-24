@@ -291,7 +291,7 @@ body{
 .most{
     display: flex;
     justify-content: center;
-    margin: 3em 0;
+    padding: 3em 0;
     font-family: 'source_sans_prolight';
     font-size: 25px;
 }
@@ -362,4 +362,35 @@ body{
 .fa-star{
     color:  rgba(216, 216, 216, 1);
     font-family: 'source_sans_prosemibold';
+}
+
+
+
+.part3{
+    background-color: rgba(7, 22, 41, 1);
+}
+.free{
+    color: #fff;
+    padding: 2em 0;
+}
+.membership{
+    display: flex;
+    justify-content: space-evenly;   
+}
+.smile2{
+    height: 52px;
+    width: 212px;
+    text-align: center;
+}
+.smile2 h3{
+    font-family: 'source_sans_prosemibold';
+    color: #fff;
+}
+.smile2 p{
+    font-family: 'source_sans_proregular';
+    color: #fff;
+}
+
+.for{
+    padding:6em 0 4em ;
 }
