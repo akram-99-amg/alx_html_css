@@ -359,7 +359,7 @@ body{
     color: rgba(194, 113, 255, 1);
     font-family: 'source_sans_prosemibold';
 }
-.fa-star{
+.none{
     color:  rgba(216, 216, 216, 1);
     font-family: 'source_sans_prosemibold';
 }
@@ -394,3 +394,76 @@ body{
 .for{
     padding:6em 0 4em ;
 }
+
+
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    height: 930px;
+    
+}
+.titrefaq{
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0 2em;
+    font-family: 'source_sans_prolight';
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.questions{
+    display: flex;
+    justify-content: space-evenly;
+}
+.questions h3{
+    color:rgba(7, 22, 41, 1);
+    font-family: 'source_sans_probold';
+}
+.lorem{
+    color: rgba(7, 22, 41, 0.5016);
+    font-family: 'source_sans_proregular';
+}
+.question{
+    width: 350px;
+    height: 242px;
+    
+}
+.padding{
+    padding-top: 5em;
+}
+
+
+
+footer{
+    height: 249px;
+    background-color: rgba(7, 22, 41, 1);
+    display: flex;
+    flex-direction: column;
+    
+}
+.logoimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    height: 190px;
+    padding-top: 10px;
+}
+.socialmedia{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    color: #fff;
+    font-size: 29px;
+}
+
+.S2020{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px ;
+    font-family: 'source_sans_proregular';
+    opacity: 35.17%;
+    font-size: 0.8em;
+    color: #fff;
+}
+
