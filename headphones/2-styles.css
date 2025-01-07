@@ -121,15 +121,13 @@ button {
     width: 162px;
     height: 44px;
     border-radius: 50px;
+    border: none;
     background-color: var(--red-100);
     font-family: 'source_sans_probold';
+    cursor: pointer;
+    color: var(--white-);
 }
 
-button a {
-    text-decoration: none;
-    color: var(--white-);
-    font-size: 12px;
-}
 
 .button {
     display: flex;
@@ -148,7 +146,7 @@ button a {
 }
 
 /*------------------*/
-.what_we_do {
+.what_we_do, .contact{
     height: 400px;
     font-family: 'source_sans_proregular';
 }

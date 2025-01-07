@@ -1,52 +1,59 @@
 @font-face {
     font-family: 'source_sans_prosemibold';
     src: url('fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-semibold-webfont.woff') format('woff');
+        url('fonts/sourcesanspro-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'source_sans_probold';
     src: url('fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-bold-webfont.woff') format('woff');
+        url('fonts/sourcesanspro-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'source_sans_proitalic';
     src: url('fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-it-webfont.woff') format('woff');
+        url('fonts/sourcesanspro-it-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'source_sans_proXLtIt';
     src: url('fonts/sourcesanspro-extralightit-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-extralightit-webfont.woff') format('woff');
+        url('fonts/sourcesanspro-extralightit-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'source_sans_problack';
     src: url('fonts/sourcesanspro-black-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-black-webfont.woff') format('woff');
+        url('fonts/sourcesanspro-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'source_sans_prolight';
     src: url('fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-light-webfont.woff') format('woff');
+        url('fonts/sourcesanspro-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'source_sans_proregular';
     src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+        url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -92,6 +99,7 @@ header {
 
 .links a:hover {
     color: var(--red-100);
+    opacity: 0.9;
 }
 
 .headp2 {
@@ -121,6 +129,9 @@ button {
     color: var(--white-);
 }
 
+button:hover {
+    opacity: 0.9;
+}
 
 .button {
     display: flex;
@@ -138,4 +149,123 @@ button {
     font-family: 'source_sans_proregular';
 }
 
+/*------------------*/
+.what_we_do,
+.contact {
+    height: 400px;
+    font-family: 'source_sans_proregular';
+}
 
+.part2 {
+    margin: 10em auto 2em;
+    width: 640px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 1.8em;
+
+}
+
+/*---------*/
+.our_results {
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    font-family: 'source_sans_proregular';
+}
+
+.result {
+    margin: auto;
+    padding-top: 15em;
+    padding-bottom: 5em;
+    width: 640px;
+    text-align: center;
+    line-height: 1.5em;
+    color: var(--white-);
+}
+
+.two {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: center;
+    line-height: 3.5em;
+    color: var(--white-);
+}
+
+.two1 {
+    background-image: url(images/pentagone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 160px;
+    width: 170px;
+    font-size: 14px;
+    gap: -2em;
+
+}
+
+.two1 p:nth-child(1) {
+    font-size: 40px;
+    font-family: 'source_sans_probold';
+    margin-top: 1em;
+}
+
+
+/*----------*/
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    width: 250px;
+    height: 0.5px;
+    background-color: #ddd;
+    margin: 4em auto;
+
+}
+
+/*----------------*/
+footer {
+    height: 250px;
+    background-color: rgba(7, 22, 41, 1);
+
+}
+
+.end {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.end img {
+    width: 160px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    color: var(--white-);
+    font-size: 29px;
+}
+
+.headphone {
+    color: var(--white-);
+    font-family: 'source_sans_proregular';
+    font-size: 14px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+}

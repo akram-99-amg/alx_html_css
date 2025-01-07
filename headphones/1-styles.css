@@ -68,6 +68,9 @@
 
 header {
     background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 800px;
 }
 
@@ -118,15 +121,13 @@ button {
     width: 162px;
     height: 44px;
     border-radius: 50px;
+    border: none;
     background-color: var(--red-100);
     font-family: 'source_sans_probold';
+    cursor: pointer;
+    color: var(--white-);
 }
 
-button a {
-    text-decoration: none;
-    color: var(--white-);
-    font-size: 12px;
-}
 
 .button {
     display: flex;
@@ -145,19 +146,19 @@ button a {
 }
 
 /*------------------*/
-.what_we_do {
-    height: 500px;
+.what_we_do, .contact{
+    height: 400px;
+    font-family: 'source_sans_proregular';
 }
 .part2{
     margin: 10em auto 2em;
     width: 640px;
     text-align: center;
     line-height: 1.5em;
-    font-family: 'source_sans_proregular';
 }
 .icons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     line-height: 1.8em;
     
