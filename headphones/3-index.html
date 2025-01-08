@@ -11,14 +11,19 @@
 
 <body>
     <header>
-        <div class="headp1">
+        <nav class="navbar">
             <img src="images/logo_headphones.png" alt="logo headphones">
             <div class="links">
-                <a href="">what we do</a>
-                <a href="">our results</a>
-                <a href="">contact us</a>
+                <ul>
+                    <li><a href="">what we do</a></li>
+                    <li><a href="">our results</a></li>
+                    <li><a href="">contact us</a></li>
+                </ul>
+
             </div>
-        </div>
+            <a class="bar" href="#links"> <img src="images/icon1.jpg" alt="" class="menu"></a>
+        </nav>
+
 
         <div class="headp2">
             <p>Lorem ipsum dolor set amet lorem ipsum</p>
@@ -38,6 +43,7 @@
         </div>
 
     </header>
+
     <section class="what_we_do">
         <div class="part2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -107,12 +113,28 @@
 
     <section class="contact">
         <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <form action="/submit-form" method="post">
+                <div class="input ">
+                    <label for="username">name: </label>
+                    <input type="text" name="username">
+                </div>
+                <div class="line"></div>
+
+                <div class="input">
+                    <label for="email">email: </label>
+                    <input type="email" name="email">
+                    <div class="line"></div>
+                </div>
+
+                <div class="input">
+                    <label for="message">message: </label>
+                    <input type="text" name="message">
+                    <div class="line"></div>
+                </div>
+            </form>
         </div>
 
-        <button class="call">CALL TO ACTION </button>
+        <button>CALL TO ACTION </button>
 
     </section>
 

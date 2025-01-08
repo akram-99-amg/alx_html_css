@@ -58,6 +58,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
 
 }
 
@@ -71,25 +76,42 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 800px;
+
+
 }
 
-.headp1 {
+.navbar {
     padding: 2em 10em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30em;
     font-family: 'source_sans_probold';
 }
 
-.headp1 img {
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 50px;
+
+}
+
+.navbar img {
     width: 161px;
 }
 
-.links {
+.links ul {
     display: flex;
     justify-content: space-evenly;
-    gap: 2.5em;
+    flex-wrap: nowrap;
+    gap: 1.5em;
+
+}
+
+.links ul li {
+    width: 100px;
 }
 
 .links a {
@@ -111,6 +133,7 @@ header {
     color: var(--white-);
     font-family: 'source_sans_probold';
     font-size: 30px;
+    width: 100%;
 }
 
 .headp2 p:nth-child(2) {
@@ -128,6 +151,9 @@ button {
     color: var(--white-);
 }
 
+button:hover {
+    opacity: 0.9;
+}
 
 .button {
     display: flex;
@@ -145,21 +171,78 @@ button {
     font-family: 'source_sans_proregular';
 }
 
+@media screen and (max-width: 900px) {
+    header {
+        height: fit-content;
+    }
+
+    .navbar img {
+        margin: 2.5em auto;
+
+    }
+
+    .navbar .links {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .navbar .menu {
+        display: block;
+    }
+
+    .headp2 {
+        width: 300px;
+        margin: 9em auto 0.5em;
+        text-align: center;
+    }
+
+    .headp3 {
+        width: 300px;
+    }
+}
+
 /*------------------*/
-.what_we_do, .contact{
+.what_we_do,
+.contact {
     height: 400px;
     font-family: 'source_sans_proregular';
 }
-.part2{
+
+.part2 {
     margin: 10em auto 2em;
     width: 640px;
     text-align: center;
     line-height: 1.5em;
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     line-height: 1.8em;
-    
+
+}
+
+@media screen and (max-width:900px) {
+    .part2 {
+        width: 300px;
+
+    }
+
+    .icons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }

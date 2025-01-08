@@ -61,7 +61,7 @@
 }
 
 body {
-    height: 100hv;
+    height: 100vh;
 }
 
 :root {
@@ -82,6 +82,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30em;
     font-family: 'source_sans_probold';
 }
 
@@ -101,7 +102,13 @@ header {
 .links ul {
     display: flex;
     justify-content: space-evenly;
-    gap: 2.5em;
+    flex-wrap: nowrap;
+    gap: 1.5em;
+
+}
+
+.links ul li {
+    width: 100px;
 }
 
 .links a {
@@ -123,6 +130,7 @@ header {
     color: var(--white-);
     font-family: 'source_sans_probold';
     font-size: 30px;
+    width: 100%;
 }
 
 .headp2 p:nth-child(2) {
@@ -140,6 +148,9 @@ button {
     color: var(--white-);
 }
 
+button:hover {
+    opacity: 0.9;
+}
 
 .button {
     display: flex;
@@ -158,12 +169,19 @@ button {
 }
 
 @media screen and (max-width: 900px) {
+    header {
+        height: fit-content;
+    }
+
+    .navbar img {
+        margin: 2.5em auto;
+
+    }
 
     .navbar .links {
         position: absolute;
         top: 22%;
-        width: 50%;
-        height: 100px;
+        left: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -173,10 +191,20 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 4em;
     }
 
     .navbar .menu {
         display: block;
     }
-    
+
+    .headp2 {
+        width: 300px;
+        margin: 9em auto 0.5em;
+        text-align: center;
+    }
+
+    .headp3 {
+        width: 300px;
+    }
 }
