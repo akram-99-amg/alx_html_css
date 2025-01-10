@@ -233,7 +233,11 @@ button:hover {
     line-height: 1.8em;
 
 }
-
+.icons .icon1 img{
+    width: 95px;
+    height: 70px;
+    margin: 2.5em;
+}
 @media screen and (max-width:900px) {
     .part2 {
         width: 300px;
