@@ -234,11 +234,21 @@ button:hover {
     line-height: 1.8em;
 
 }
-.icons .icon1 img{
+
+.icons .icon1 img {
     width: 95px;
     height: 70px;
     margin: 2.5em;
 }
+
+.icons .icon1 {
+    transition: transform 0.3s;
+}
+
+.icons .icon1:hover {
+    transform: translateY(-10px);
+}
+
 @media screen and (max-width:900px) {
     .part2 {
         width: 300px;
@@ -256,6 +266,42 @@ button:hover {
         height: fit-content;
         padding-bottom: 2em;
     }
+}
+
+@keyframes slideleft {
+    from {
+        transform: translateY(500px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slideleft {
+    animation: slideleft 1s ease-in 1;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+.appear {
+    animation: appear 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 /*---------*/
@@ -296,13 +342,59 @@ button:hover {
     width: 170px;
     font-size: 14px;
     gap: -2em;
+    transition: transform 0.3s;
 
+}
+
+.two .two1:hover {
+    transform: translateY(-10px);
 }
 
 .two1 p:nth-child(1) {
     font-size: 40px;
     font-family: 'source_sans_probold';
     margin-top: 1em;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 1s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes bounce {
+
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-70px);
+    }
+
+    70% {
+        transform: translateY(-50px);
+    }
+
+
+}
+
+.bounce {
+    animation: bounce 15s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 @media screen and (max-width:900px) {
