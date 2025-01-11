@@ -268,6 +268,42 @@ button:hover {
     }
 }
 
+@keyframes slideleft {
+    from {
+        transform: translateY(500px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slideleft {
+    animation: slideleft 1s ease-in 1;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+.appear {
+    animation: appear 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
 /*---------*/
 .our_results {
     background-image: url(images/headphones_hero_2.jpg);
@@ -318,6 +354,47 @@ button:hover {
     font-size: 40px;
     font-family: 'source_sans_probold';
     margin-top: 1em;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotate 1s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes bounce {
+
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-70px);
+    }
+
+    70% {
+        transform: translateY(-50px);
+    }
+
+
+}
+
+.bounce {
+    animation: bounce 15s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 @media screen and (max-width:900px) {

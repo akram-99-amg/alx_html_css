@@ -16,7 +16,7 @@ Footer: you can found the social media links.
 Technologies Used:
 
 HTML5: for the structure of the web page;
-CSS3: for styling, layout and animation that you can see in 4-index.html;
+CSS3: for styling, layout and animation that you can see in 7-index.html;
 Font Awesome: for icons and visual enchancements.
 
 
@@ -26,7 +26,7 @@ index.html      #main html file;
 style.css       #CSS files for styling;
 Images\         #Folder for all the image assets;
 Fonts\          #Folder for custom fonts used.
-<!--note thae there are six html and each html has his own css file link to it-->
+<!--note thae there are seven html and each html has his own css file link to it-->
 
 
 Setup instructions:
