@@ -180,6 +180,10 @@ button:hover {
         margin: 2.5em auto;
 
     }
+    
+    .navbar a img{
+        mix-blend-mode: color-burn;
+    }
 
     .navbar .links {
         position: absolute;
